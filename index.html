@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Summer Camp Activity</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="start">
+    <form action="index2.html" method="get" name="summercampform" onsubmit="return validatedform()">
+    <h1>Summer Camp Activity</h1>
+    <h2>Your Child Will Love it</h2>
+    <div class="row">
+        <label><b>FistName:</b> </label>
+        <input type="text" name="fname" id="">
+        <div class="error" id="fnamerror"></div>
+        <br>
+        
+    </div>
+
+    <div class="row">
+        <label><b>MiddleName: </b></label>
+        <input type="text" name="mname" id="">
+        <div class="error" id="mnamerror"></div>
+        <br>
+    </div>
+    <div class="row">
+        <label><b>LastName: </b></label>
+        <input type="text" name="lname" id="">
+        <div class="error" id="lnamerror"></div>
+        <br>
+    </div>
+
+    <div class="row">
+        <label><b>MobileNumber: </b></label>
+        <input type="text" name="mobile" id="">
+        <div class="error" id="mobilerror"></div>
+        <br>
+    </div>
+    <div class="row">
+        <label><b>Email id: </b></label>
+        <input type="email" name="email" id="">
+        <div class="error" id="emailerror"></div>
+        <br>
+    </div>
+    <div class="row">
+        <h4>Select State:</h4>
+  <select id="stateSelect" onchange="populateCities()">
+    <option value="">Select a state</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Uttar Pradesh">Uttar Pradesh</option>
+  </select>
+  <div class="error" id="staterror"></div>
+    </div>
+
+    <div class="row">
+
+        <h4>Select City:</h4>
+  <select id="citySelect">
+    <option value="">Select a city</option>
+  </select>
+  <div class="error" id="cityerror"></div>
+    </div>
+    
+    <div class="row">
+        <label><b>Age:</b></label>
+        <input type="number" name="age" id="">
+        <div class="error" id="agerror"></div>
+        <br>
+    </div>
+    
+    <div class="row">
+        <label><b>Gender:</b></label>
+        <div class="gender-container">
+          <label><input type="radio" name="gender" value="male">Male</label>
+          <label><input type="radio" name="gender" value="female">Female</label>
+          <label><input type="radio" name="gender" value="transgender">Transgender</label>
+        </div>
+        <div class="error" id="gendererror"></div>
+      </div>
+      
+      <div class="row">
+        <label for=""><b>Indoor Sports:</b></label>
+        <div class="form-inline">
+            <label for=""><input type="checkbox" name="gamein" id="" value="carrom" >Carrom</label>
+            <label for=""><input type="checkbox" name="gamein" id="" value="chess">Chess</label>
+            <label for=""><input type="checkbox" name="gamein" id="" value="squash">Squash</label>
+            <label for=""><input type="checkbox" name="gamein" id="" value="table-tennis">Polo</label>
+            
+        </div>
+        
+      </div>
+      
+      <div class="row">
+        <label for=""><b>Outdoor Sports:</b></label>
+        <div class="form-inline">
+            <label for=""><input type="checkbox" name="gameout" id="" value="cricket">Cricket</label>
+            <label for=""><input type="checkbox" name="gameout" id="" value="Hockey">Hockey</label>
+            <label for=""><input type="checkbox" name="gameout" id="" value="football">Football</label>
+            <label for=""><input type="checkbox" name="gameout" id="" value="boxing">Boxing</label>
+            
+
+        </div>
+      </div>
+      
+      <div class="row"><input type="submit" value="Submit"></div>
+
+        
+
+    </div>
+</form>
+</div>
+
+</body>
+</html>

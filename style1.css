@@ -1,0 +1,146 @@
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(img.webp);
+  background-size: cover;
+  height: 100%;
+}
+
+.start {
+  height: 100%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="checkbox"] {
+  width: 50%;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 4px;
+  text-align: left;
+  height: 25px;
+  background-color: transparent;
+  border-color: black;
+}
+
+input[type="submit"] {
+  width: 10%;
+  background-color: rgb(38, 88, 205);
+  color: white;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30px;
+  margin-left: 300px;
+}
+
+form {
+  padding-left: 350px;
+}
+
+label {
+  display: inline-block;
+  align-items: center;
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+h1 {
+  padding-right: 190px;
+}
+
+/* CSS for smaller screens (mobile devices) */
+
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="checkbox"],
+  input[type="submit"],
+  label,
+  form {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+  h1 {
+    padding-right: 10px;
+  }
+
+  body {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(img.webp);
+    background-size: cover;
+    height: 100vh;
+  }
+
+  input[type="submit"] {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .form-inline label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  /* Add the following CSS for checkboxes specifically */
+  .form-inline input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+h4{
+  padding-left: 35px;
+}
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-left: 15px;
+}
+
+select:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+select:hover {
+  box-shadow: 0 0 50px black;
+}
+
+.error {
+  color: black;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
